@@ -1,6 +1,6 @@
 {
   "name": "@meetsnowmaker/trycatcher",
-  "version": "0.0.1-alpha.4",
+  "version": "0.0.1-alpha.6",
   "description": "Graceful failure handler for synchronous functions.",
   "license": "MIT",
   "repository": {
@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "build": "npx babel src --out-dir dist --ignore src/example",
+    "build-example": "npx babel src --out-dir dist-example",
     "prepare": "npm run build",
     "test": "echo \"No test specified\" && exit 0"
   },

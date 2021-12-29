@@ -6,7 +6,6 @@ const shouldFail = '["asd",kek]';
 const [parsed, error] = tryCatcher(() => JSON.parse(shouldWork));
 
 if (error) {
-  console.log("error", error);
   throw error;
 }
 
