@@ -1,0 +1,32 @@
+{
+  "name": "@meetsnowmaker/trycatcher",
+  "version": "0.0.1-alpha.4",
+  "description": "Graceful failure handler for synchronous functions.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeetSnowmaker/trycatcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MeetSnowmaker/trycatcher/issues"
+  },
+  "homepage": "https://github.com/MeetSnowmaker/trycatcher#readme",
+  "main": "dist/index.js",
+  "author": "",
+  "keywords": [
+    "try",
+    "catch",
+    "npm",
+    "package"
+  ],
+  "scripts": {
+    "build": "npx babel src --out-dir dist --ignore src/example",
+    "prepare": "npm run build",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5"
+  }
+}
