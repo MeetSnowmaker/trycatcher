@@ -1,6 +1,6 @@
 {
   "name": "@meetsnowmaker/trycatcher",
-  "version": "0.0.1-alpha.6",
+  "version": "0.0.1-alpha.7",
   "description": "Graceful failure handler for synchronous functions.",
   "license": "MIT",
   "repository": {

@@ -1,7 +1,7 @@
 # @meetsnowmaker/trycatcher
 
-![npm (scoped)](https://img.shields.io/npm/v/@meetsnowmaker/trycatcher)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@meetsnowmaker/trycatcher)
+[![npm (scoped)](https://img.shields.io/npm/v/@meetsnowmaker/trycatcher)](https://github.com/MeetSnowmaker/trycatcher)
+[![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@meetsnowmaker/trycatcher)](https://github.com/MeetSnowmaker/trycatcher)
 
 Embrace failure in synchronous functions.
 
@@ -12,6 +12,8 @@ This is a work in progress.
 Ever since I started learning functional programming and asynchronous functions in node, the old way of trying and catching errors felt off. To avoid making every function asynchronous just to be able to properly return the desired outcome to the const I defined, I made a simple hacky attempt to get a predetermined response from the tryable function.
 
 As I naturally progressed to urge for maximum immutability, it felt somewhat more convenient to define both outcomes with a single call. After a while I noticed this simple function had numerous copies in almost every project I worked on. I was thinking it might be a great opportunity to learn more about the npm packaging lifecycle, so here it is. My first dummy npm project. Bye `let` you might be missed.
+
+Please note: this is definitely not an original idea, just my take on a solution.
 
 ## How to
 
@@ -31,12 +33,10 @@ if (error) {
 
 console.log("parsed", parsed);
 
-const [maybeParsed, definitellyError] = tryCatcher(() =>
-  JSON.parse(shouldFail)
-);
+const [maybeParsed, definitelyError] = tryCatcher(() => JSON.parse(shouldFail));
 
-if (definitellyError) {
-  throw definitellyError;
+if (definitelyError) {
+  throw definitelyError;
 }
 
 console.log("maybeParsed", maybeParsed);
@@ -47,7 +47,7 @@ will yield
 ```
 parsed [ 'asd', 'kek' ]
 C:\...\example.js:42
-  throw definitellyError;
+  throw definitelyError;
   ^
 
 SyntaxError: Unexpected token k in JSON at position 7
