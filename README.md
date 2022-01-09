@@ -1,7 +1,7 @@
 # @meetsnowmaker/trycatcher
 
 [![npm (scoped)](https://img.shields.io/npm/v/@meetsnowmaker/trycatcher)](https://github.com/MeetSnowmaker/trycatcher)
-[![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@meetsnowmaker/trycatcher)](https://github.com/MeetSnowmaker/trycatcher)
+[![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@meetsnowmaker/trycatcher)](https://www.npmjs.com/package/@meetsnowmaker/trycatcher)
 
 Embrace failure in synchronous functions.
 
@@ -20,9 +20,9 @@ Please note: this is definitely not an original idea, just my take on a solution
 The default version returns with an array where index 0 is always either `null` or the desired outcome, and index 1 is `null` or the caught `error`. When defining you can destruct the array and get properly named variables for the predetermined indexes.
 
 ```node
-import { tryCatcher } from "@meetsnowmaker/trycatcher";
+import { tryCatcher } from '@meetsnowmaker/trycatcher';
 
-const shouldWork = JSON.stringify(["asd", "kek"]);
+const shouldWork = JSON.stringify(['asd', 'kek']);
 const shouldFail = '["asd",kek]';
 
 const [parsed, error] = tryCatcher(() => JSON.parse(shouldWork));
@@ -31,7 +31,7 @@ if (error) {
   throw error;
 }
 
-console.log("parsed", parsed);
+console.log('parsed', parsed);
 
 const [maybeParsed, definitelyError] = tryCatcher(() => JSON.parse(shouldFail));
 
@@ -39,7 +39,7 @@ if (definitelyError) {
   throw definitelyError;
 }
 
-console.log("maybeParsed", maybeParsed);
+console.log('maybeParsed', maybeParsed);
 ```
 
 will yield

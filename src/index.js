@@ -1,3 +1,3 @@
-import { tryCatcher } from "./array";
+import { tryCatcher } from './array';
 
 export { tryCatcher, tryCatcher as default };

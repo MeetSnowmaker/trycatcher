@@ -1,0 +1,5 @@
+{
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parser": "@babel/eslint-parser",
+  "env": { "node": true }
+}
