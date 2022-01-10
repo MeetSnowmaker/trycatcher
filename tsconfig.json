@@ -17,6 +17,7 @@
     "outDir": "dist"
     // go to js file when using IDE functions like
     // "Go to Definition" in VSCode
+    // since I emit the declarations to dist, this is not necessary
     // "declarationMap": true
   }
 }

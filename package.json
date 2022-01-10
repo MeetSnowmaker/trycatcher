@@ -1,10 +1,11 @@
 {
   "name": "@meetsnowmaker/trycatcher",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0",
   "description": "Graceful failure handler for synchronous functions.",
   "keywords": [
     "try",
     "catch",
+    "trycatcher",
     "npm",
     "package"
   ],
@@ -17,7 +18,10 @@
     "url": "git+https://github.com/MeetSnowmaker/trycatcher.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "MeetSnowmaker",
+    "email": "meetsnowmaker@gmail.com"
+  },
   "main": "dist/index.js",
   "files": [
     "readme.md",
