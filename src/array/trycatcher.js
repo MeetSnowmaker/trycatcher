@@ -20,9 +20,10 @@ const tryCatcher = (tryable) => {
     // console.log("result: ", result);
     return [result, null];
   } catch (error) {
-    // console.log("error: ", error);
     return [null, error];
   }
 };
 
 export { tryCatcher };
+
+export default tryCatcher;

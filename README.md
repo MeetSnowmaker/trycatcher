@@ -63,4 +63,3 @@ Things I want to add in the future:
 - typescript
 - object like return with undefined instead of null, so one can inject default value when destructuring
 - webpack for minifying
-- eslint and prettier developer configurations

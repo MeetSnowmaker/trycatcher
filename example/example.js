@@ -1,4 +1,4 @@
-import { tryCatcher } from '../index';
+import { tryCatcher } from '../src/index';
 
 const shouldWork = JSON.stringify(['asd', 'kek']);
 const shouldFail = '["asd",kek]';
@@ -9,6 +9,7 @@ if (error) {
   throw error;
 }
 
+// eslint-disable-next-line no-console
 console.log('parsed', parsed);
 
 const [maybeParsed, definitellyError] = tryCatcher(() =>
@@ -19,4 +20,5 @@ if (definitellyError) {
   throw definitellyError;
 }
 
+// eslint-disable-next-line no-console
 console.log('maybeParsed', maybeParsed);

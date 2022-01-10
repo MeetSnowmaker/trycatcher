@@ -1,0 +1,7 @@
+# In addition to any patterns in the .eslintignore file, ESLint always follows a couple implicit ignore rules
+#  even if the --no-ignore flag is passed. The implicit rules are as follows:
+# node_modules/ is ignored.
+# Dotfiles (except for .eslintrc.*) as well as Dotfolders and their contents are ignored.
+
+coverage/
+dist/

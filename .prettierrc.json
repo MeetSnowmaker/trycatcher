@@ -6,5 +6,7 @@
   "arrowParens": "always",
   "printWidth": 80,
   "bracketSpacing": true,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+
+  "jsdocSingleLineComment": false
 }
